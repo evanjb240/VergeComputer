@@ -17,4 +17,4 @@ Steps to setup:
     i. Obviously replace yourPath/blah with the path you created in 4-a above.
     ii. 30 */4 * * *  - this means the task will run at 30 minutes past the hour, every 4th hour. you can go to                       https://crontab.guru/ to customize your scheduling
     
-Good Luck!!
+Good Luck!! 
