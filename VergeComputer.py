@@ -11,13 +11,13 @@ balData = json.load(balResponse)
 newBalance = balData['balance']
 
 	
-bal = open("/Users/evanbauer/Desktop/Mining/Verge/existingBalance.txt","r") 
+bal = open("yourPath/blah/existingBalance.txt","r") 
 balance = float(bal.readline())
 bal.close()
 
 if newBalance != balance:
     #replace old balance with new balance
-    bal=open("/Users/evanbauer/Desktop/Mining/Verge/existingBalance.txt", "w")
+    bal=open("yourPath/blah/existingBalance.txt", "w")
     bal.write(str(newBalance))
     bal.close()
 
@@ -29,7 +29,7 @@ if newBalance != balance:
     tempPayout = float(newBalance-balance)
     totalUSDPayout = float(tempPayout*priceUSD)
 
-    pool = open("/Users/evanbauer/Desktop/Mining/Verge/poolPayouts.txt", "a")
+    pool = open("yourPath/blah/poolPayouts.txt", "a")
     pool.write(datetime.datetime.now().strftime("%m/%d/%y, %H:%M") + "\t\t" +str(newBalance-balance)+", \t"+ str(priceUSD) + ",\t"+ str(totalUSDPayout) + "\n")
     pool.close()
 
