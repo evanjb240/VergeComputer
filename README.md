@@ -14,7 +14,7 @@ iii. Line 25: this is just a simple coinmarketcap endpoint and can probably just
 5. **MAC ONLY, WINDOWS WILL NEED TO FIND A DIFFERENT TASK SCHEDULER**
 a. Open Terminal and paste the following: env EDITOR=nano crontab -e
 b. Once the crontab opens, paste the following without quotes: "30 */4 * * * python yourPath/blah/Verge/VergeComputer.py"
-i. Obviously replace yourPath/blah with the path you created in 4-a above.
+i. Obviously replace yourPath/blah with the path you created in 4-a above. Hit control+O, control+X to save and quit. 
 ii. 30 */4 * * *  - this means the task will run at 30 minutes past the hour, every 4th hour. you can go to                       https://crontab.guru/ to customize your scheduling
     
 Good Luck!! 
